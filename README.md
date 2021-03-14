@@ -1,4 +1,4 @@
-## Original Repo of bot Click Here
+## Original Repo of bot [Click Here](https://github.com/suprojects/CallsMusic)
 
 ## SU Music Player — The first open-source PyTgCalls based Pyrogram bot to play music in voice chats
 
