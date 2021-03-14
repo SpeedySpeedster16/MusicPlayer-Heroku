@@ -7,7 +7,7 @@ from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton
     & filters.private
     & ~ filters.edited
 )
-async def start_(client: Client, message: Message):
+async def start(client: Client, message: Message):
     await message.reply_text(
         f"""<b>👋🏻 Hi {message.from_user.first_name}!</b>
 
@@ -35,15 +35,20 @@ Use the buttons below to know more about me.""",
 
 
 @Client.on_message(
-    filters.command("start")
+    filters.command("help")
     & filters.group
     & ~ filters.edited
 )
-async def start(client: Client, message: Message):
+async def help(client: Client, message: Message):
     await message.reply_text(
         "💁🏻‍♂️ Do you want to search for a YouTube video?",
         reply_markup=InlineKeyboardMarkup(
             [
+                [
+                    InlineKeyboardButton(
+                        "🔥Support🔥", url="https://t.me/Mysterybotschat"
+                    )
+                ],
                 [
                     InlineKeyboardButton(
                         "✅ Yes", switch_inline_query_current_chat=""
