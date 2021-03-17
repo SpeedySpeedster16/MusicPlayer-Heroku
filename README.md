@@ -15,6 +15,8 @@ Neither this, or PyTgCalls are stable.
 
 ### Deployment
 
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
+
 #### NORMAL WAY
 1. Install Python requirements:
   
